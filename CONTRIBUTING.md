@@ -1,8 +1,6 @@
 # Contributing to ci-config-travis
 
-* [Code of Conduct](#code-of-conduct)
-
-## [Code of Conduct]
+## Code of Conduct
 
 The Node.js project has a
 [Code of Conduct](https://github.com/nodejs/admin/blob/master/CODE_OF_CONDUCT.md)
