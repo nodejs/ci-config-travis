@@ -1,4 +1,4 @@
-# Contributing to ci-config-travis
+# Contributing
 
 ## Code of Conduct
 
@@ -6,7 +6,7 @@ The Node.js project has a
 [Code of Conduct](https://github.com/nodejs/admin/blob/master/CODE_OF_CONDUCT.md)
 to which all contributors must adhere.
 
-See [details on our policy on Code of Conduct](./doc/guides/contributing/code-of-conduct.md).
+See [details on our policy on Code of Conduct](https://github.com/nodejs/node/blob/master/doc/guides/contributing/code-of-conduct.md).
 
 <a id="developers-certificate-of-origin"></a>
 ## Developer's Certificate of Origin 1.1
