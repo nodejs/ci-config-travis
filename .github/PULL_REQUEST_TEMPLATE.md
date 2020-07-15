@@ -4,11 +4,6 @@ the requirements below.
 
 -->
 
-##### Checklist
-<!-- Remove items that do not apply. For completed items, change [ ] to [x]. -->
-
-- [ ] commit message follows [commit guidelines]
-
 <!--
 Developer's Certificate of Origin 1.1
 

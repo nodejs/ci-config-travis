@@ -1,6 +1,4 @@
 # Shared Travis Configuration Imports
 
-This repository is managed by the
-[package-maintenance team](https://github.com/nodejs/package-maintenance).
-
+This repository is managed by the [Package Maintenance Working Group](https://github.com/nodejs/package-maintenance), see [Governance](https://github.com/nodejs/package-maintenance/blob/master/Governance.md).
 
