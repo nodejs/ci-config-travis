@@ -5,11 +5,12 @@ Import configurations from this folder into your `.travis.yml` to automatically 
 Other upgrade policies:
 
 - [`all`](../../all) - new major releases get added as they are released, they never get removed
-when their support lifetime ends, LTS versions never get removed
 - [`lts`](../../lts) - new major releases get added as they are released, non-LTS releases get removed when their support lifetime ends, LTS versions never get removed   
 
 
 ## Usage example
+
+In your `.travis.yml`, replace the `node_js` section with the following:
 
 ```
 import:

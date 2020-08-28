@@ -10,6 +10,8 @@ Other upgrade policies:
 
 ## Usage example
 
+In your `.travis.yml`, replace the `node_js` section with the following:
+
 ```
 import:
   - nodejs/ci-config-travis:all/gte-14.yml

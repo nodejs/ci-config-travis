@@ -7,6 +7,8 @@ Import configurations from this repository into your `.travis.yml` to automatica
 
 ## Usage
 
+In your `.travis.yml`, replace the `node_js` section with the following:
+
 ```
 import:
   - nodejs/ci-config-travis:lts/gte-10.yml
@@ -23,6 +25,6 @@ Once added to the list, the Long Term Support (LTS) versions will never get remo
 
 This repository offers three upgrade policies:
 
-- [`all`](./all) - new major releases get added as they are released, they never get removed
-- [`lts`](./lts) - new major releases get added as they are released, non-LTS releases get removed when their support lifetime ends, LTS versions never get removed
-- [`lts/strict`](./lts/strict) - new major releases get added as they reach LTS status, they never get removed   
+- **[`all`](./all)** - new major releases get added as they are released, they never get removed
+- **[`lts`](./lts)** - new major releases get added as they are released, non-LTS releases get removed when their support lifetime ends, LTS versions never get removed
+- **[`lts/strict`](./lts/strict)** - new major releases get added as they reach LTS status, they never get removed   
