@@ -23,3 +23,17 @@ import:
 - New major Node.js versions, greater or equal to v10.0.0, will be added to the list as soon as they are released
 - Once added, LTS versions will never be removed. Non-LTS versions will be removed when they reach their lifetime.
     - Note that if your policy is to only support LTS versions, then removing the non-LTS version in your test matrix is not a breaking change, as the non-LTS version was never supported (it was only used for test purposes).
+
+### Upgrade timeline
+
+For actual release dates, please check the Node.js [Release Working Group](https://github.com/nodejs/Release/#release-schedule) repository.
+
+This is an example of which versions would be available in each of the files on a certain date:
+
+|                       | `lts/gte-10.yml`        | Notes
+|-----------------------|-------------------------|-------
+| Jul, 2020             | 10, 12, 14              |
+| Nov, 2020             | 10, 12, 14, 15          | In Oct, 2020 v14 reaches LTS and v15 is released
+| May, 2021             | 10, 12, 14, 15, 16      | In Apr, 2021 v10 reaches EOL and v16 is released
+| Jul, 2021             | 10, 12, 14, 16          | On 1/Jun/2021, v15 reaches EOL and ⚠️ is removed from `lts` policy files
+| Nov, 2021             | 10, 12, 14, 16, 17      | In Oct, 2021 V16 reaches LTS and v17 should be released

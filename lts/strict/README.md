@@ -20,3 +20,17 @@ import:
 - Travis will use the latest version of each release line in the list
 - New major Node.js versions, greater or equal to v10.0.0, will be added to the list as soon as they achieve LTS status (i.e. ~6 months after they are first released)
 - Once added, versions will never be removed from the list
+
+### Upgrade timeline
+
+For actual release dates, please check the Node.js [Release Working Group](https://github.com/nodejs/Release/#release-schedule) repository.
+
+This is an example of which versions would be available in each of the files on a certain date:
+
+|                       | `lts/strict/gte-10.yml` | Notes
+|-----------------------|-------------------------|-------
+| Jul, 2020             | 10, 12                  |
+| Nov, 2020             | 10, 12, 14              | In Oct, 2020 v14 reaches LTS and v15 is released
+| May, 2021             | 10, 12, 14              | In Apr, 2021 v10 reaches EOL and v16 is released
+| Jul, 2021             | 10, 12, 14              | On 1/Jun/2021, v15 reaches EOL
+| Nov, 2021             | 10, 12, 14, 16          | In Oct, 2021 V16 reaches LTS and v17 should be released
