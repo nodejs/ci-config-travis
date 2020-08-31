@@ -24,6 +24,14 @@ import:
 - Once added, LTS versions will never be removed. Non-LTS versions will be removed when they reach their lifetime.
     - Note that if your policy is to only support LTS versions, then removing the non-LTS version in your test matrix is not a breaking change, as the non-LTS version was never supported (it was only used for test purposes).
 
+The shared configurations only define a list of major versions, which means Travis CI will execute your tests in the _latest_ version of each major release line. If you intend your code to work in earlier versions of that release line, you _should_ explicitly include the earliest version you support in your test matrix, e.g. append the following in your `.travis.yml`:
+
+```
+node_js:
+  - "10.0.0"
+```
+
+
 ### Upgrade timeline
 
 For actual release dates, please check the Node.js [Release Working Group](https://github.com/nodejs/Release/#release-schedule) repository.

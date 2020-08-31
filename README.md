@@ -42,3 +42,17 @@ This is an example of which versions would be available in each of the files on 
 | May, 2021             | 10, 11, 12, 13, 14, 15, 16     | 10, 12, 14, 15, 16      | 10, 12, 14              | In Apr, 2021 v10 reaches EOL and v16 is released
 | Jul, 2021             | 10, 11, 12, 13, 14, 15, 16     | 10, 12, 14, 16          | 10, 12, 14              | On 1/Jun/2021, v15 reaches EOL and ⚠️ is removed from `lts` policy files (`lts/strict` never has this version included and `all` keeps it)
 | Nov, 2021             | 10, 11, 12, 13, 14, 15, 16, 17 | 10, 12, 14, 16, 17      | 10, 12, 14, 16          | In Oct, 2021 V16 reaches LTS and v17 should be released
+
+
+## Including the minimum supported version
+
+The shared configurations only define a list of major versions, which means Travis CI will execute your tests in the _latest_ version of each major release line. If you intend your code to work in earlier versions of that release line, you _should_ explicitly include the earliest version you support in your test matrix, e.g. append the following in your `.travis.yml`:
+
+```
+node_js:
+  - "10.0.0"
+```
+
+This will ensure that you do not accidentally use features added in v10.1+, as they would be considered breaking changes for the consumers of your library.
+
+Should you chose to only support the latest version of any major release line, there currently is no supported way to defined that via the `engines` field in your `package.json`, however you could communicate this using [Document support levels](https://github.com/nodejs/package-maintenance/blob/master/docs/PACKAGE-SUPPORT.md) (i.e. the `support` field or alternative locations).
