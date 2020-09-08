@@ -55,4 +55,4 @@ node_js:
 
 This will ensure that you do not accidentally use features added in v10.1+, as they would be considered breaking changes for the consumers of your library.
 
-Should you chose to only support the latest version of any major release line, there currently is no supported way to defined that via the `engines` field in your `package.json`, however you could communicate this using [Document support levels](https://github.com/nodejs/package-maintenance/blob/master/docs/PACKAGE-SUPPORT.md) (i.e. the `support` field or alternative locations).
+Should you chose to only support the latest version of any major release line, there currently is no supported way to define that via the `engines` field in your `package.json`, however you could communicate this using [Document support levels](https://github.com/nodejs/package-maintenance/blob/master/docs/PACKAGE-SUPPORT.md) (i.e. the `support` field or alternative locations).
